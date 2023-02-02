@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "id": "seeds",
+  "id": "seedslider",
   "version": "0.0.1",
-  "name": "Seeds",
-  "description": "The new and hip way to enter seeds into Minecraft.",
+  "name": "Seedslider",
+  "description": "The new and revolutionary way to enter seeds into Minecraft.",
   "authors": [
     "Nils"
   ],
