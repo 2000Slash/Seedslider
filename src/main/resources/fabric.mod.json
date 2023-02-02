@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "seeds",
+  "version": "0.0.1",
+  "name": "Seeds",
+  "description": "The new and hip way to enter seeds into Minecraft.",
+  "authors": [
+    "Nils"
+  ],
+  "entrypoints": {
+    "main": ["net.nilsh.SeedsMod"]
+  },
+  "mixins": [
+    "seeds.mixins.json"
+  ]
+}

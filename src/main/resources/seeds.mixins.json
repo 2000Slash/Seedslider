@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.nilsh.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "client": [
+    "CreateWorldScreenMixin",
+    "GridLayoutTabAccessor"
+  ],
+  "mixins": [
+    "GridLayoutAccessor"
+  ]
+}
