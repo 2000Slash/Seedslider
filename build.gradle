@@ -26,12 +26,12 @@ loom {
 
 dependencies {
     //https://fabricmc.net/versions.html
-    minecraft "com.mojang:minecraft:23w05a"
+    minecraft "com.mojang:minecraft:23w06a"
     //mappings "net.fabricmc:yarn:23w05a+build.3:v2"
     mappings loom.officialMojangMappings()
-    modImplementation "net.fabricmc:fabric-loader:0.14.13"
+    modImplementation "net.fabricmc:fabric-loader:0.14.14"
 
-    modImplementation "net.fabricmc.fabric-api:fabric-api:0.73.3+1.19.4"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:0.73.5+1.19.4"
 }
 
 publishing {
