@@ -8,7 +8,7 @@
     "Nils"
   ],
   "entrypoints": {
-    "main": ["net.nilsh.SeedsMod"]
+    "client": ["net.nilsh.SeedsMod"]
   },
   "mixins": [
     "seedslider.mixins.json"

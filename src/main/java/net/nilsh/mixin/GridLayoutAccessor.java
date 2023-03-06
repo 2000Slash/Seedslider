@@ -1,21 +1,20 @@
 package net.nilsh.mixin;
 
-import net.minecraft.client.gui.layouts.GridLayout;
-import net.minecraft.client.gui.layouts.LayoutElement;
+import java.util.List;
+import net.minecraft.client.gui.widget.GridWidget;
+import net.minecraft.client.gui.widget.Widget;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Mutable;
 import org.spongepowered.asm.mixin.gen.Accessor;
 
-import java.util.List;
-
-@Mixin(GridLayout.class)
+@Mixin({GridWidget.class})
 public interface GridLayoutAccessor {
     @Accessor
-    List<LayoutElement> getChildren();
+    List<Widget> getChildren();
 
     @Accessor
     @Final
     @Mutable
-    void setChildren(List<LayoutElement> children);
+    void setChildren(List<Widget> var1);
 }
