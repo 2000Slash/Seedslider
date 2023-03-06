@@ -1,6 +1,6 @@
 # Seedslider
 <p align="center">
-  <img width="800" src="https://user-images.githubusercontent.com/10107972/218218524-d51795b4-92a4-4c9e-a91d-7e0dcb5b2b72.png">
+  <img width="800" src="https://user-images.githubusercontent.com/10107972/223202936-c5834418-6611-4a2f-914d-9b0c97c7369f.png">
   </br>
   what
 </p>
