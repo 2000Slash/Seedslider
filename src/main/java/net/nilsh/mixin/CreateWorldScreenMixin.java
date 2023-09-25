@@ -5,6 +5,7 @@ import java.util.Random;
 
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.gui.screen.world.CreateWorldScreen;
+import net.minecraft.client.gui.widget.DirectionalLayoutWidget;
 import net.minecraft.client.gui.widget.GridWidget;
 import net.minecraft.client.gui.widget.Widget;
 import net.minecraft.client.option.SimpleOption;
@@ -29,8 +30,8 @@ public class CreateWorldScreenMixin {
         this.field_42182.getWorldCreator().setSeed(String.valueOf(seed));
         GridLayoutTabAccessor accessor = (GridLayoutTabAccessor)this;
         GridLayoutAccessor gridLayoutAccessor = (GridLayoutAccessor)accessor.getGrid();
-        GridWidget gridLayout = (GridWidget)gridLayoutAccessor.getChildren().get(2);
-        gridLayoutAccessor = (GridLayoutAccessor)gridLayout;
+        DirectionalLayoutWidgetAccessor gridLayout = (DirectionalLayoutWidgetAccessor)gridLayoutAccessor.getChildren().get(2);
+        gridLayoutAccessor = (GridLayoutAccessor)gridLayout.getGrid();
         List<Widget> elements = gridLayoutAccessor.getChildren();
         SimpleOption<Long> optionInstance = new SimpleOption<Long>("selectWorld.enterSeed", SimpleOption.emptyTooltip(), SeedsMod::getGenericValueText, new SeedsMod.ValidatingIntSliderCallbacks(Long.MIN_VALUE, Long.MAX_VALUE), seed, (integer) -> {
             this.field_42182.getWorldCreator().setSeed(String.valueOf(integer));
